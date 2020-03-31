@@ -17,6 +17,6 @@ To stop recording, use:
 ```bash
 $ endstream
 ```
-This is issue a killall command for ffmpeg, again requiring root privileges.
+This will issue a killall command for ffmpeg, again requiring root privileges.
 
 The video will be owned by root and write-protected. You'll need to run a chown/chmod accordingly to modify video permissions if needed.
