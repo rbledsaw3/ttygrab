@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Enter file name (including .mkv):"
+read filename
+
+sudo -b ffmpeg -n -hide_banner -nostats -loglevel panic -f alsa -i "hw:0,0" -f fbdev -r 30 -i /dev/fb0 -c:v libx264 -c:a flac $filename
